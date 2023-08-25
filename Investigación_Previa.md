@@ -65,7 +65,9 @@ So we need to measure the *power* $P(x)$ of a signal $x(n)$,  via:
 
 $$P(x)=1/N \cdot \displaystyle\sum_{n=0}^{N-1}x(n)^2$$
 
-Which is simply taking the square of the signal and then the average.
+## Prueba de insertar imagen
+
+![Descripción de la imagen](/images/perro.jpeg "Leyenda de la imagen")
 
 
 
