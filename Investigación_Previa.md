@@ -65,9 +65,12 @@ So we need to measure the *power* $P(x)$ of a signal $x(n)$,  via:
 
 $$P(x)=1/N \cdot \displaystyle\sum_{n=0}^{N-1}x(n)^2$$
 
-## Prueba de insertar imagen
+## Prueba de insertar imagen 1
 
 ![Descripción de la imagen](/images/perro.jpeg "Leyenda de la imagen")
 
+## Prueba de insertar imagen 2
+
+<img src="/images/perro.jpeg" alt="Descripción de la imagen" style="width:25%;" />
 
 
