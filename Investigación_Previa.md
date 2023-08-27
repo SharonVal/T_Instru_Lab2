@@ -64,11 +64,31 @@ RESPUESTA
 
 Para medir el **CMR** o **CMRR** de una señal diferencial primero se debe medir la ganancia diferencial ($A_d$) de manera que se logre apreciar la diferencia entre los das dos entradas al dispositivo.
 
-Luego se tiene la ganancia de modo común ($A_c$), la cual afecta directamente a las tensiones continuas que se encuentren en la entrada del dispositivo.
+Luego se tiene la ganancia de modo común ($A_c$), la cual afecta directamente a las tensiones continuas que se encuentren en la entrada del dispositivo. Así, se calcula el valor del CMRR en decibeles con la siguiente fórmula:
 
-FALTA ...
+$$CMRR = 20\cdot log \left(\frac{A_d}{A_c}\right)$$
+
+Para realizar estas mediciones se puede utilizar el método de resistencias de precisión, como se observa en la figura, donde se aplica una señal a las entradas y se mide su diferencia con la salida, en este punto una variación del $0.1\%$ corresponde en CMR a aproximadamente $66$ $dB$.
+
+<img src="/images/CMRR_resistencias.png" alt="Circuito de medición para CMRR con resistencias de presición" style="width:35%;" />
+
+Otro método se realiza al aplicarle diferentes tensiones conmutadas a un circuito un mayor cantidad de componentes, entre esos un amplificador extra que este bien definido en sus características, entre las cuales se encuentra una alta ganancia. Ejemplo en la figura siguiente.
+
+<img src="/images/CMRR_tensiones.png" alt="Circuito de medición para CMRR con conmutación de fuentes" style="width:35%;" />
+
+La medición del **rechazo de crosstalk** se mide al obtener la relación señal a crosstalk, donde la señal se mide de manera directa, pero el crosstalk se mide al aplicar un tono a una entrada y medir la salida del otro canal, permitiendo observar el crosstalk resultante. En la siguiente ilustración se muestra un diagrama de ejemplo con capacitores modelando el crosstalk.
+
+
+De esta manera, se aplica la fórmula de relación señal a crosstalk en decibeles:
+
+$$SCT = 10\cdot log \left(\frac{P_{señal}}{P_{crosstalk}}\right)$$
+
 
 ## Referencias
+- a
+- a
+- a
+- a
 - Problema 2
 - https://www.emb.cl/electroindustria/articulo.mvc?xid=1502&ni=termocuplas-fundamentos-y-recomendaciones
 - https://catedra.ing.unlp.edu.ar/electrotecnia/cys//DI/termocuplas.pdf
@@ -76,16 +96,18 @@ FALTA ...
 - Problema 3
 - http://telcoavi.es/blog/senal-balanceada-vs-senal-no-balanceada/
 - https://www.thomann.de/blog/es/cable-balanceado-y-no-balanceado-en-que-se-diferencian/
-- Problema 4
 - a
 - a
 - a
 - a
 - a
 - a
-- 
 - a
-- a
+- Problema 7
+- https://electrositio.com/relacion-de-rechazo-en-modo-comun-cmrr-y-el-amplificador-operacional/
+- https://www.tsc.uc3m.es/~fran/docencia/SyCT/Tema6_sesion1.pdf
+- https://www.youtube.com/watch?v=Cv5zNkC4-ao
+
 
 
 
