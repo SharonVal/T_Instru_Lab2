@@ -35,13 +35,17 @@ Se cuenta con termocuplas:
 - Tipo S: También basado en platino, se trata del estandar de laboratorio con rango de $[0,1760] °C$ y tensión máxima de $18.68 mV$.
 - Tipo T: Compuesto de cobre, rango de $[-250,400] °C$ y tensión máxima $20.8 mV$.
 A manera de resumen de algunos de estos tipos de termocuplas, se siguiente figura.
+
 <img src="/images/termocupla.PNG" alt="Gráfico de tensión eléctrica contra temperatura de termocuplas" style="width:25%;" />
 
 ### 3. ¿Qué es una señal balanceada y una no balanceada? ¿Qué aplicación tiene el uso de señales balanceadas?
 
 Una *señal balanceada* se trata de una señal que es transmitida de manera simétrica por medio de dos conductores (cable balanceado) en donde la copia es enviada en contrafase o invertida, lo cual permite que una interferencia o ruido captado por la señal sea cancelado al llegar al destino y reinvertir la copia de la señal y sumarlas, obteniendo el doble del mensaje original recuperado.
+
 **Aplicación:** Su aplicación sobresale en los casos de transferencia de señales a largas distancias o ambientes complicados (ruido/interferencia), donde el objetivo es la calidad de la señal. Así, se encuentran casos como las comunicaciones, instrumentación delicada (mediciones), audio profesional, entre otras.
-<img src="/images/senal_balanceada.PNG" alt="Ejemplo de presencia de interferencia en señal balanceada" style="width:10%;" />
+
+<img src="/images/senal_balanceada.png" alt="Ejemplo de presencia de interferencia en señal balanceada" style="width:35%;" />
+
 Una *señal no balanceada* se trata de una mensaje enviado de manera más simple, ya que solo se cuenta con un medio vivo y referencia (tierra), de manera que dicho conductor de referencia protege con mallado la línea con el mensaje. Dichas señales suelen verse en conexiones de instrumentos musicales o equipos de buen desempeño.
 
 ### 4. ¿Qué es el aislamiento eléctrico entre dos tierras? ¿En los diseños electrónicos que ventajas tiene el aislamiento entre señales?
@@ -58,16 +62,21 @@ RESPUESTA
 
 ### 7. Investigue como se mide el rechazo de modo común para una señal diferencial, y el rechazo de crosstalk entre dos canales.
 
-RESPUESTA
+Para medir el **CMR** o **CMRR** de una señal diferencial primero se debe medir la ganancia diferencial ($A_d$) de manera que se logre apreciar la diferencia entre los das dos entradas al dispositivo.
+
+Luego se tiene la ganancia de modo común ($A_c$), la cual afecta directamente a las tensiones continuas que se encuentren en la entrada del dispositivo.
+
+FALTA ...
 
 ## Referencias
+- Problema 2
 - https://www.emb.cl/electroindustria/articulo.mvc?xid=1502&ni=termocuplas-fundamentos-y-recomendaciones
 - https://catedra.ing.unlp.edu.ar/electrotecnia/cys//DI/termocuplas.pdf
 - https://www.watlow.com/resources-and-support/engineering-tools/reference-data/thermocouple-types
-- 
+- Problema 3
 - http://telcoavi.es/blog/senal-balanceada-vs-senal-no-balanceada/
 - https://www.thomann.de/blog/es/cable-balanceado-y-no-balanceado-en-que-se-diferencian/
-- 
+- Problema 4
 - a
 - a
 - a
