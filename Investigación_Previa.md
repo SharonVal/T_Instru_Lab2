@@ -35,17 +35,17 @@ Se cuenta con termocuplas:
 - Tipo S: También basado en platino, se trata del estandar de laboratorio con rango de $[0,1760] °C$ y tensión máxima de $18.68 mV$.
 - Tipo T: Compuesto de cobre, rango de $[-250,400] °C$ y tensión máxima $20.8 mV$.
 A manera de resumen de algunos de estos tipos de termocuplas, se siguiente figura.
-
+<p align="center">
 <img src="/images/termocupla.PNG" alt="Gráfico de tensión eléctrica contra temperatura de termocuplas" style="width:25%;" />
-
+</p>
 ### 3. ¿Qué es una señal balanceada y una no balanceada? ¿Qué aplicación tiene el uso de señales balanceadas?
 
 Una *señal balanceada* se trata de una señal que es transmitida de manera simétrica por medio de dos conductores (cable balanceado) en donde la copia es enviada en contrafase o invertida, lo cual permite que una interferencia o ruido captado por la señal sea cancelado al llegar al destino y reinvertir la copia de la señal y sumarlas, obteniendo el doble del mensaje original recuperado.
 
 **Aplicación:** Su aplicación sobresale en los casos de transferencia de señales a largas distancias o ambientes complicados (ruido/interferencia), donde el objetivo es la calidad de la señal. Así, se encuentran casos como las comunicaciones, instrumentación delicada (mediciones), audio profesional, entre otras.
-
+<p align="center">
 <img src="/images/senal_balanceada.png" alt="Ejemplo de presencia de interferencia en señal balanceada" style="width:35%;" />
-
+</p>
 Una *señal no balanceada* se trata de una mensaje enviado de manera más simple, ya que solo se cuenta con un medio vivo y referencia (tierra), de manera que dicho conductor de referencia protege con mallado la línea con el mensaje. Dichas señales suelen verse en conexiones de instrumentos musicales o equipos de buen desempeño.
 
 ### 4. ¿Qué es el aislamiento eléctrico entre dos tierras? ¿En los diseños electrónicos que ventajas tiene el aislamiento entre señales?
@@ -64,11 +64,34 @@ RESPUESTA
 
 Para medir el **CMR** o **CMRR** de una señal diferencial primero se debe medir la ganancia diferencial ($A_d$) de manera que se logre apreciar la diferencia entre los das dos entradas al dispositivo.
 
-Luego se tiene la ganancia de modo común ($A_c$), la cual afecta directamente a las tensiones continuas que se encuentren en la entrada del dispositivo.
+Luego se tiene la ganancia de modo común ($A_c$), la cual afecta directamente a las tensiones continuas que se encuentren en la entrada del dispositivo. Así, se calcula el valor del CMRR en decibeles con la siguiente fórmula:
 
-FALTA ...
+$$CMRR = 20\cdot log \left(\frac{A_d}{A_c}\right)$$
+
+Para realizar estas mediciones se puede utilizar el método de resistencias de precisión, como se observa en la figura, donde se aplica una señal a las entradas y se mide su diferencia con la salida, en este punto una variación del $0.1\%$ corresponde en CMR a aproximadamente $66$ $dB$.
+<p align="center">
+  <img src="/images/CMRR_resistencias.PNG" alt="Circuito de medición para CMRR con resistencias de presición" style="width:30%;" />
+</p>
+
+
+Otro método se realiza al aplicarle diferentes tensiones conmutadas a un circuito un mayor cantidad de componentes, entre esos un amplificador extra que este bien definido en sus características, entre las cuales se encuentra una alta ganancia. Ejemplo en la figura siguiente.
+<p align="center">
+<img src="/images/CMRR_conmutadas.PNG" alt="Circuito de medición para CMRR con conmutación de fuentes" style="width:35%;" />
+</p>
+La medición del **rechazo de crosstalk** se mide al obtener la relación señal a crosstalk, donde la señal se mide de manera directa, pero el crosstalk se mide al aplicar un tono a una entrada y medir la salida del otro canal, permitiendo observar el crosstalk resultante. En la siguiente ilustración se muestra un diagrama de ejemplo con capacitores modelando el crosstalk.
+<p align="center">
+<img src="/images/crosstalk.PNG" alt="Circuito de medición para crosstalk" style="width:35%;" />
+</p>
+De esta manera, se aplica la fórmula de relación señal a crosstalk en decibeles:
+
+$$SCT = 10\cdot log \left(\frac{P_{señal}}{P_{crosstalk}}\right)$$
+
 
 ## Referencias
+- a
+- a
+- a
+- a
 - Problema 2
 - https://www.emb.cl/electroindustria/articulo.mvc?xid=1502&ni=termocuplas-fundamentos-y-recomendaciones
 - https://catedra.ing.unlp.edu.ar/electrotecnia/cys//DI/termocuplas.pdf
@@ -76,42 +99,25 @@ FALTA ...
 - Problema 3
 - http://telcoavi.es/blog/senal-balanceada-vs-senal-no-balanceada/
 - https://www.thomann.de/blog/es/cable-balanceado-y-no-balanceado-en-que-se-diferencian/
-- Problema 4
 - a
 - a
 - a
 - a
 - a
 - a
-- 
 - a
-- a
+- Problema 7
+- https://electrositio.com/relacion-de-rechazo-en-modo-comun-cmrr-y-el-amplificador-operacional/
+- https://www.tsc.uc3m.es/~fran/docencia/SyCT/Tema6_sesion1.pdf
+- https://www.youtube.com/watch?v=Cv5zNkC4-ao
+
 
 
 
 # Lo copié de por ahí para tenerlo de referencia y ver como se hacen algunas cosas...
-
-- Method 3 uses the FFT to analyse for a fundamental frequency. It assumes that the input is a sinusoidal signal, the system adds noise and can contain weak non-linearities.
-- Methos 4 is here mostly for reference and is mostly suited for DC signals (not audio signals)
-
-## Basic Definition
-A discrete time signal, $x_s(n)$ exists. Through some process, noise $x_n(n)$ and harmonics of $x$ are added, resulting in a new signal, $y(n)$ that therefore contains noise and distortion.
-
-The main idea is to make a *ratio* between signal power to noise power. 
-
-
-$$ SNR = \frac{P_{signal}}{P_{noise}} $$
-
-So we need to measure the *power* $P(x)$ of a signal $x(n)$,  via:
-
+AAAAAAAAAAAAA
 $$P(x)=1/N \cdot \displaystyle\sum_{n=0}^{N-1}x(n)^2$$
 
-## Prueba de insertar imagen 1
 
-![Descripción de la imagen](/images/perro.jpeg "Leyenda de la imagen")
-
-## Prueba de insertar imagen 2
-
-<img src="/images/perro.jpeg" alt="Descripción de la imagen" style="width:25%;" />
 
 
