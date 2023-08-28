@@ -76,7 +76,13 @@ RESPUESTA
 
 ### 6. Investigue diseños de amplificadores con ganancia programable.
 
-RESPUESTA
+1. Amplificador operacional con divisor resistivo.
+
+<p align="center">
+  <img src="/images/ganancia_potenciometro" alt="Circuito con amplificador operacional y potenciómetro" style="width:30%;" />
+</p>
+
+2. 
 
 ### 7. Investigue como se mide el rechazo de modo común para una señal diferencial, y el rechazo de crosstalk entre dos canales.
 
