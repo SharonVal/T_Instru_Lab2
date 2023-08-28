@@ -65,7 +65,10 @@ Una *señal no balanceada* se trata de una mensaje enviado de manera más simple
 
 ### 4. ¿Qué es el aislamiento eléctrico entre dos tierras? ¿En los diseños electrónicos que ventajas tiene el aislamiento entre señales?
 
-RESPUESTA
+El aislamiento eléctrico entre dos tierras se refiere a la capacidad de impedir el paso de corriente eléctrica entre dos puntos que están en potenciales eléctricos diferentes, es decir, en tierras distintas. Para lograr el aislamiento eléctrico entre dos tierras se puede emplear materiales aislantes en forma de recubrimiento o separación entre los conductores que están en contacto con la tierra.
+
+La ventaja que tiene el aislamiento entre señales es que previene que se produzcan cortocircuitos, inteferencias electromagnéticas o daños en el equipo.
+
 
 ### 5. Investigue diseños electrónicos para aislar eléctricamente señales DC o de baja frecuencia (<100Hz).
 
@@ -103,10 +106,10 @@ $$SCT = 10\cdot log \left(\frac{P_{señal}}{P_{crosstalk}}\right)$$
 
 
 ## Referencias
-- a
-- a
-- a
-- a
+- Problema 1
+- https://pirometriatecnica.com/sensores-de-temperatura-tipos-caracteristicas-y-aplicaciones/
+- https://srcsl.com/tipos-sensores-temperatura/
+- https://guide.directindustry.com/es/que-sensor-de-temperatura-elegir/
 - Problema 2
 - https://www.emb.cl/electroindustria/articulo.mvc?xid=1502&ni=termocuplas-fundamentos-y-recomendaciones
 - https://catedra.ing.unlp.edu.ar/electrotecnia/cys//DI/termocuplas.pdf
