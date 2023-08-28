@@ -19,7 +19,22 @@ MSc. Ing. Kaleb Alfaro Badilla
 
 ### 1. ¿Cuales son los tipos de sensores de temperatura más populares? ¿Cuáles son sus ventajas y desventajas en función de los requisitos del diseño?
 
-RESPUESTA
+- Resistencias térmicas: Son sensores que se basan en el cambio de resistencia eléctrica de un material conductor o semiconductor cuando varía su temperatura.
+        Ventajas: Miden entre -200°C y 850°C, son precisos, lineales y estables.
+        Desventajas: Tienen un alto costo, un tiempo de respuesta lento y son sensibles a las interferencias electromagnéticas.
+
+- Sensores infrarrojos: Son sensores que se basan en la detección de la radiación infrarroja emitida por un cuerpo u objeto debido a su temperatura.
+        Ventajas: No necesitan contacto con el objeto a medir, tienen una alta velocidad de respuesta y una buena precisión.
+        Desventajas: Tienen un alto costo, son sensibles a las condiciones ambientales y requieren de una calibración periódica
+
+- Termopares: Son sensores que se basan en el efecto Seebeck, que consiste en la generación de una diferencia de potencial eléctrico entre dos metales diferentes unidos en un extremo cuando se someten a una diferencia de temperatura.
+        Ventajas: Son económicos, de fácil instalación y con un amplio rango de medición. Miden desde -200°C hasta 1800°C, dependiendo del tipo de termopar.
+        Desventajas: Tienen una baja precisión, una mala linealidad y requieren de un dispositivo de referencia para compensar la temperatura ambiente.
+
+- Termistores: Son sensores que se basan en el cambio de resistencia eléctrica de un material semiconductor cuando varía su temperatura.
+        Ventajas: Son muy sensibles, con un tiempo de respuesta rápido y un bajo costo.
+        Desventajas: Tienen una baja linealidad, una alta dependencia del voltaje y un rango de medición limitado, que suele estar entre los -50°C y los 150°C.
+
 
 ### 2. ¿Cuales son los tipos de termocuplas? ¿Cuales son sus rangos de temperatura y tensión?
 
