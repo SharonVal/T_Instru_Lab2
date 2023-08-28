@@ -76,13 +76,29 @@ RESPUESTA
 
 ### 6. Investigue diseños de amplificadores con ganancia programable.
 
-1. Amplificador operacional con divisor resistivo.
+1. Amplificador operacional con divisor resistivo: La ganancia del amplificador aplicada sobre la señal se ajustará al variar el potenciómetro.
 
 <p align="center">
-  <img src="/images/ganancia_potenciometro" alt="Circuito con amplificador operacional y potenciómetro" style="width:30%;" />
+  <img src="/images/ganancia_potenciometro.jpg" alt="Circuito con amplificador operacional y potenciómetro" style="width:30%;" />
 </p>
 
-2. 
+2. Amplificador de transconductancia variable (OTA): Dispositivo electrónico similar al amplificador operacional, pero que tiene una entrada de corriente que controla la ganancia de corriente del amplificador.
+
+<p align="center">
+  <img src="/images/ganancia_transconductor.jpg" alt="Circuito con amplificador OTA" style="width:30%;" />
+</p>
+
+3. Amplificador controlado por voltaje (VCA): Dispositivos que ajustan su ganancia en función de una señal de control de voltaje.
+
+<p align="center">
+  <img src="/images/ganancia_VCA.png" alt="Circuito con amplificador VCA" style="width:30%;" />
+</p>
+
+4. Amplificadores de instrumentación con ganancia ajustable: Amplificadores diseñados para medir pequeñas diferencias de tensión para el cual se puede ajustar la ganancia.
+
+<p align="center">
+  <img src="/images/ganancia_instru.png" alt="Circuito con amplificador instru" style="width:30%;" />
+</p>
 
 ### 7. Investigue como se mide el rechazo de modo común para una señal diferencial, y el rechazo de crosstalk entre dos canales.
 
